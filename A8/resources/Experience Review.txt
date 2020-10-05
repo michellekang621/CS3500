@@ -1,0 +1,28 @@
+1. What do you wish you had done differently in your design/implementation?
+    Did you learn any lessons from the code given to you, or the
+    updates you had to make for your customers?
+
+Something we wish we had done better earlier on is the
+encapsulation of our model. Our model interface methods
+were dependent on a couple classes that technically should
+have been private. However, some of our methods took in these
+classes as parameters or had them as return values which
+forced us to have to share more classes than we would have
+had we better encapsulated our model – making it more flexible
+for our clients. We partly learned this through the code given
+to us, which also worked with a class (Formula) that was not
+originally a part of the publicly available code. This made
+the implementation of their model interface (Worksheet)
+difficult because we didn’t have the necessary code to
+implement certain methods that worked with the Formula class.
+
+2. What was your experience like with your providers?
+
+We had a very pleasant experience with our providers. They
+responded both quickly and promptly and gave us exactly
+what we needed. They also helped us in realizing that
+the group we would provide our code to wasn’t the same
+group that we should receive code from. Thankfully, this
+helped us bring up the issue with the course staff and get
+our issue resolved before it developed into anything too
+serious.

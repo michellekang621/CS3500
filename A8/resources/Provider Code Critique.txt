@@ -1,0 +1,38 @@
+Critique:
+How flexible are the interfaces you were given?
+-	It was slightly flexible but a little too tightly coupled because
+the methods returned class types that they had created that we shouldn’t have needed from them.
+
+How capable are the views?
+-	Their view was very capable and user friendly. It allows the
+user to edit the cells and technically load saved files and open new ones.
+However, we didn’t implement these functions because we hadn’t implemented them in our own controller.
+
+How convenient was it to reuse their code?
+-	It was very nuanced and very difficult to understand for someone who
+ didn’t use a version of their view. For example, it was hard to deduce the
+ purpose of the view classes that they gave us in their view package
+ because we didn’t use a JTable implementation for our view and consequently
+ we had to understand how they implemented the JTable interface and decided to
+ organize all of its components.
+
+How cleanly written and well-documented was their code?
+-	They covered all the necessary Javadoc but we still had a hard time
+figuring out how all the methods were meant to work together in different
+components of their view. This is because the Javadoc that was given to us
+was not very explanatory and often just included one sentence that we
+could assume from the name of the method or object it was describing.
+For methods that didn’t have a clear purpose, no clear purpose was provided
+(i.e., their method addCyclicReference in their Worksheet interface didn’t
+ seem to have any real purpose). We also ran into this problem because it
+ is often difficult to describe the purpose of methods that have its purpose
+ inside of the name. However, going forward, this is an area both groups can improve on.
+
+If you needed to request changes from them, what were they and why were they needed?
+-	We needed them to send us a class that wasn’t provided to us originally.
+This class was an implementation of their WorksheetView interface which
+rendered an editable view of their model (which we then adapted to be
+able to work with our model using an adapter to be able to edit it.)
+
+We also refactored our Formula interface to work with their of
+Worksheet interface in our WorksheetAdapter.
